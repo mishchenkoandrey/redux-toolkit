@@ -1,5 +1,5 @@
 {
-  "name": "webpack-package",
+  "name": "redux-toolkit",
   "version": "0.1.0",
   "description": "",
   "scripts": {
@@ -7,33 +7,37 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hexlet-boilerplates/webpack-package.git"
+    "url": "git+https://github.com/mishchenkoandrey/redux-toolkit.git"
   },
-  "author": "Kirill Mokevnin",
+  "author": "Andrey Mishchenko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hexlet-boilerplates/webpack-package/issues"
+    "url": "https://github.com/mishchenkoandrey/redux-toolkit/issues"
   },
-  "homepage": "https://github.com/hexlet-boilerplates/webpack-package#readme",
+  "homepage": "https://github.com/mishchenkoandrey/redux-toolkit#readme",
   "jest": {
     "verbose": true,
     "testURL": "http://localhost/",
     "testEnvironment": "jsdom"
   },
-  "main": "src/init.js",
+  "main": "src/init.jsx",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/eslint-parser": "^7.15.4",
-    "@babel/preset-env": "^7.15.4",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
     "babel-jest": "^27.1.1",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.2.0",
     "debug": "^4.3.2",
     "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-babel": "^5.3.1",
-    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "jest": "^27.1.1",
@@ -47,7 +51,12 @@
     "webpack-dev-server": "^4.1.1"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.7.2",
     "npm-check-updates": "^11.8.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
     "sass": "^1.39.0",
     "sass-loader": "^12.1.0"
   }

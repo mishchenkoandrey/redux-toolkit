@@ -1,11 +1,14 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const mode = process.env.NODE_ENV || 'development';
+
 module.exports = {
   mode: process.env.NODE_ENV || 'development',
+  devtool: mode === 'production' ? false : 'source-map',
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.js[x]$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
